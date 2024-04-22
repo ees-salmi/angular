@@ -1,0 +1,67 @@
+Your task is to complete TransactionDetailsComponent. You only have to modify the template part of the component.
+ 
+The component is responsible for displaying the fee, currency, amount and time of a transaction, each in a specific format.
+ 
+You need to display 3 divs:
+Fee div
+The id of the div needs to be fee. It has to display the value of fee as a percentage.
+If there are less than two digits for the integer part of the percent value, you have to display leading zeros.
+If there are less than two decimal digits, you have to display trailing zeros.
+If there are more than three decimal digits, you have to round the formatted number to three digits.
+For example 0.031234 becomes 03.123% after formatting it.
+Amount div
+The id of the div needs to be amount. It has to display the currency symbol from the currency code (€ for EUR for example) followed by the amount.
+If there are less than nine digits for the integer part of the amount, you have to display leading zeros. The numbers have to be separated after every third digit with a comma.
+If there are less than two decimal digits, you have to display trailing zeros, and if there are more, you have to round the value to two decimals.
+For example currency=EUR , amount=312.562 becomes €000,000,312.56 after formatting.
+Time div
+The id of the div needs to be time. The time of the transaction has to be displayed using this unusual format: 'ww: yyyy MMMMM dd hh-mm-ss'
+ 
+Notes:
+
+A "Preview" block of code is available to help you debug your code. It is used to display your component in the panel below. You can expand it or even modify it as you see fit. 
+The "Preview" code is not taken into account for the computation of the score of your submitted code. import { Component, Input, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector:'transaction-component',
+  template: `
+  <div id="fee" >{{fee }}% </div>
+  <div id="amount | currency : 'symbol':'1.2-2' " >{{amount}} </div>
+  <div id="time" >{{timeOfTransaction}} </div>
+  `
+})
+export class TransactionDetailsComponent {
+
+  @Input()
+  public currency: string;
+
+  @Input()
+  public timeOfTransaction: Date;
+
+  @Input()
+  public amount: number;
+
+  @Input()
+  public fee: number;
+  
+}
+
+// #region Preview
+@Component({
+    template: `<transaction-component [fee]=0.02 [amount]=123.45 [currency]="'EUR'" [timeOfTransaction]='getPresetDate()'></transaction-component>`
+})
+export class PreviewComponent {
+  public getPresetDate(){
+    return new Date(1997,6,1,12,32);
+  }
+ }
+// #endregion Preview
+
+// #region Module declaration - Do not Change
+@NgModule({
+    imports: [CommonModule],
+    declarations: [PreviewComponent, TransactionDetailsComponent],
+    entryComponents: [PreviewComponent]
+})
+export class PreviewModule { }

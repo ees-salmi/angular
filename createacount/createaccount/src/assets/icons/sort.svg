@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="128" height="128">
+  <!-- Arrow up -->
+  <polygon points="12 4 7 10 17 10" fill="none" stroke="black" stroke-width="2"/>
+  <!-- Arrow down -->
+  <polygon points="12 20 17 14 7 14" fill="none" stroke="black" stroke-width="2"/>
+</svg>

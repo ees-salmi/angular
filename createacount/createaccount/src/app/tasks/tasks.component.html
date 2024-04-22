@@ -1,0 +1,27 @@
+
+<div class="kanban-board">
+    <div class="column" (dragover)="onDragOver($event)" (drop)="onDrop($event,'To Do')" draggable="true">
+        <div class="column-header"> To Do</div>
+        <app-ticket  
+        class="ticket" 
+        draggable="true" 
+        *ngFor="let ticket of filterTickets('To Do')" 
+        (mouseenter)="showAction($event)" 
+        [isHidden]="isActionsHidden" [title]="ticket.name" 
+        [description]="ticket.description" 
+        (drag)="onDragStart(ticket)" 
+        [ngClass]="{ 'dragging': ticket === currentTicket }"
+        >
+            
+       </app-ticket> 
+    </div>
+    <div class="column" (dragover)="onDragOver($event)"  (drop)="onDrop($event,'In Progress')">
+        <div class="column-header">In Progress</div>
+        <app-ticket draggable="true" *ngFor="let ticket of filterTickets('In Progress')" [title]="ticket.name" [description]="ticket.description" (drag)="onDragStart(ticket)" [ngClass]="{ 'dragging': ticket === currentTicket }">
+        </app-ticket>    </div>
+    <div class="column" (dragover)="onDragOver($event)"  (drop)="onDrop($event,'Done')">
+        <div class="column-header" >Done</div>
+        <app-ticket draggable="true" *ngFor="let ticket of filterTickets('Done')" [title]="ticket.name" [description]="ticket.description" (drag)="onDragStart(ticket)" [ngClass]="{ 'dragging': ticket === currentTicket }">
+        </app-ticket>
+    </div>
+</div>

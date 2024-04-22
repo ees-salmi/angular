@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    background-color: #eff0f1;
+}
+
+img{
+    margin-right: 10px;
+    margin-LEFT: 10px;
+}
+
+
+
+input[type="text"] {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 5px #d0d1d2;
+    width: 300px;
+    margin: 0 10px;
+    font-size: 16px;
+    margin-right: 320px;
+}
+
+.account-icon {
+    color: #0A8CC4;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+}
+

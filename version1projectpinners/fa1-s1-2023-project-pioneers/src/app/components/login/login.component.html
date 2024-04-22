@@ -1,0 +1,33 @@
+<br>
+<p-card>
+    <div class='row'>
+        <div class='col-md-4'>
+            
+        </div>
+        <div class='col-md-4'>
+            <div class='card'>
+                <div class='card-header'>
+                    Login
+                    
+                </div>
+                    <div class='card-body'>
+                        <form (ngSubmit)="onSubmit()">
+                            <div>
+                              <label for="email">Email:</label>
+                              <input type="email" id="email" [(ngModel)]="email" name="email" required>
+                            </div>
+                            <div>
+                              <label for="password">Password:</label>
+                              <input type="password" id="password" [(ngModel)]="password" name="password" required>
+                            </div>
+                            <button type="submit">Login</button>
+                          </form>
+                    </div>
+                
+            </div>
+        </div>
+        <div class='col-md-4'>
+           
+        </div>
+    </div>
+</p-card>

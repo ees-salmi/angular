@@ -1,0 +1,45 @@
+.actions{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px;
+    width: 60px;
+    height: 20px;
+    border: 1px light rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgba(50, 54, 59, 0.2) 0px 2px 14px;
+    background: -moz-linear-gradient();
+    &__edit{
+        font-weight: 100;
+        padding-right: 15px;
+        border-right: 1px solid rgb(99, 110, 114);
+
+        }
+}
+.context-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .context-menu ul li {
+    padding: 8px 12px;
+    width: 230px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .context-menu ul li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  

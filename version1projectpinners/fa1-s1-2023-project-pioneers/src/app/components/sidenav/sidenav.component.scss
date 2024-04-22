@@ -1,0 +1,29 @@
+.sidebar {
+    position: fixed;
+    top: 63px;
+    left: 0;
+    bottom: 5px;
+    z-index: 100;
+    padding: 100PX 0 0;
+    box-shadow: inset -1px 0 0 #13ABDB;
+    border-top-right-radius: 30px; 
+    border-bottom-right-radius: 30px;
+    background-color: #eff0f1 !important;
+  }
+  
+  
+
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .sidebar .nav-link i {
+    margin-right: 8px;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #13ABDB;
+  }
+  

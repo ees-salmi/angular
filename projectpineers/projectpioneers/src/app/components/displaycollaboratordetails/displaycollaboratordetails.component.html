@@ -1,0 +1,56 @@
+<div class='row'>
+    <div class='col-md-4'>
+        <div class='card'>
+            <div class='card-header'>
+                Informations personnelles
+                
+            </div>
+                <div class='card-body'>
+                </div>
+                <img src="../../../assets/images/essalmi.jpg" width="100" height="100" class="rounded" alt="essalmi">
+                <table>
+                    <thead><tr><th></th><th></th></tr></thead>
+                    <tbody>
+                        <tr><td class="title"></td><td>{{collaborator?.firstName}} {{collaborator?.lastName}}</td></tr>
+                        <tr><td class="title"></td><td></td></tr>
+                        <tr><td class="title">Groupe Grade</td><td>{{collaborator?.groupGrade}}</td></tr>
+                        <tr><td class="title">Local Grade</td><td> {{collaborator?.localGrade}} </td></tr>
+                        <tr><td class="title">Project</td><td>{{collaborator?.projectName}} </td></tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <div class='col-md-5'>
+        <div class='card'>
+            <div class='card-header'>
+            Informations generales 
+            </div>
+                <div class='card-body'>
+                    <table>
+                        <thead><tr><th></th><th></th></tr></thead>
+                        <tbody>
+                            <tr><td class="title">PuCode</td><td>{{collaborator?.puCode}}</td></tr>
+                            <tr><td class="title">Nom du CM</td><td> {{collaborator?.firstName}} {{collaborator?.lastName}} </td></tr>
+                            <tr><td class="title">Ancienneté</td><td>{{collaborator?.joiningDate}} </td></tr>
+                            <tr><td class="title">Date de naissance</td><td>{{collaborator?.birthday | date: 'dd/MM/yyyy'}} </td></tr>
+                            <tr><td class="title">Date d'intégration</td><td>{{collaborator?.joiningDate | date: 'dd/MM/yyyy'}} </td></tr>
+                            <tr><td class="title">Date d'intégration</td><td>{{collaborator?.officeBase}} </td></tr>
+                            <tr><td class="title">Type de contrat</td><td>{{collaborator?.typeContrat}} </td></tr>
+                            <tr><td class="title">Status</td><td>{{collaborator?.status}} </td></tr>
+                            <tr><td class="title">Email</td><td>{{collaborator?.email}} </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+    <div class='col-md-3'>
+        <div class='card'>
+            <div class='card-header'>
+            notes 
+            </div>
+                <div class='card-body'>
+                </div>
+                <h4>Filtered by</h4>
+        </div>
+    </div>
+</div>

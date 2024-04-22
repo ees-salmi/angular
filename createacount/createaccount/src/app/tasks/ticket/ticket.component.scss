@@ -1,0 +1,47 @@
+
+.card:hover{
+  background-color: rgb(232,232,232);
+}
+.card {
+  background-color: #ffffffd3;
+  border-radius: 5px;
+  padding: 2px 5px 5px 5px;
+  height:auto;
+  box-shadow: inset;
+  &__header{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    input {
+      border-color: none;
+      background-color: transparent;
+    }
+      
+     
+  }
+  
+}
+.description{
+  font-family: sans-serif;
+}
+.ticket__action{
+  align-items: end;
+}
+
+.time{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.createdDate{
+margin: 10px 10px 10px 10px;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: 50px;
+}
+.dragging {
+  background-color: #f4f4f4;
+  opacity: 0;
+}

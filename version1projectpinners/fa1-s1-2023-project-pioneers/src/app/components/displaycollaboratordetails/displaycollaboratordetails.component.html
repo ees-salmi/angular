@@ -1,0 +1,53 @@
+<br>
+<p-card>
+    <div class='row'>
+        <div class='col-md-4'>
+            <div class='card'>
+                <div class='card-header'>
+                    Informations personnelles
+                    
+                </div>
+                    <div class='card-body'>
+                    </div>
+                    <img >
+                    <table>
+                        <thead><tr><th></th><th></th></tr></thead>
+                        <tbody>
+                            <tr><td>Groupe Grade:</td><td><b>{{collab.groupGrade}}</b></td></tr>
+                            <tr><td>Local Grade:</td><td> <b>{{collab.localGrade}}</b> </td></tr>
+                            <tr><td>Projet:</td><td><b>{{collab.projectName}} </b></td></tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <div class='col-md-5'>
+            <div class='card'>
+                <div class='card-header'>
+                Informations générales 
+                </div>
+                    <div class='card-body'>
+                    </div>
+                    <table>
+                        <thead><tr><th></th><th></th></tr></thead>
+                        <tbody>
+                            <tr><td>PU Code:</td><td><b>{{collab.puCode}}</b></td></tr>
+                            <tr><td>Nom du Carrière Manager:</td><td> <b>{{collab.localGrade}}</b> </td></tr>
+                            <tr><td>Ancienneté:</td><td><b>{{collab.anciennete}} </b></td></tr>
+                            <tr><td>Date de naissance:</td><td><b>{{collab.birthday  | date:'dd/MM/yyyy'}} </b></td></tr>
+                            <tr><td>Date d'intégration':</td><td><b>{{collab.joiningDate | date:'dd/MM/yyyy'}} </b></td></tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <div class='col-md-3'>
+            <div class='card'>
+                <div class='card-header'>
+                notes 
+                </div>
+                    <div class='card-body'>
+                    </div>
+                    <h4>Filtered by</h4>
+            </div>
+        </div>
+    </div>
+</p-card>

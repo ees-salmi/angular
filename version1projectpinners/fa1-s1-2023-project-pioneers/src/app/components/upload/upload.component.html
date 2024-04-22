@@ -1,0 +1,40 @@
+
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Injection des données</h1>
+    </div>
+    <p-card>
+        <table class="container">
+            <tr>
+                <td><label for="formFile">Sesame</label></td>
+                <td><input type="file" id="formFile" (change)="selectFile($event)"></td>
+                <td><button class="button" [disabled]="!selectedFiles " (click)="upload('sesame')">Upload</button> </td> 
+            </tr>  
+            <tr>
+                <td><label for="formFile">MyPath_Histo</label></td>
+                <td><input type="file" id="formFile" (change)="selectFile($event)"></td>
+                <td><button class="button" [disabled]="!selectedFiles " (click)="upload('mypathhisto')">Upload</button> </td> 
+            </tr>
+            <tr>
+                <td><label for="formFile">InfoRetain</label></td>
+                <td><input type="file" id="formFile" (change)="selectFile($event)"></td>
+                <td><button class="button" [disabled]="!selectedFiles " (click)="upload('inforetain')">Upload</button> </td> 
+            </tr>
+            <tr>
+                <td><label for="formFile">UserRole</label></td>
+                <td><input type="file" id="formFile" (change)="selectFile($event)"></td>
+                <td><button class="button" [disabled]="!selectedFiles " (click)="upload('userrole')">Upload</button> </td> 
+            </tr>
+            <tr>
+                <td><label for="formFile">Collab_RH</label></td>
+                <td><input type="file" id="formFile" (change)="selectFile($event)"></td>
+                <td><button class="button" [disabled]="!selectedFiles " (click)="upload('collabrh')">Upload</button> </td> 
+            </tr>
+            <tr>
+                <td><label for="formFile">Certifs</label></td>
+                <td><input type="file" id="formFile" (change)="selectFile($event)"></td>
+                <td><button class="button" [disabled]="!selectedFiles " (click)="upload('certif')">Upload</button> </td> 
+            </tr>
+            
+        </table>
+    </p-card>
+

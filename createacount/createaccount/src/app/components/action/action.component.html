@@ -1,0 +1,12 @@
+<div class="actions">
+    <div class="actions__edit"><i class='far fa-edit' (click)="onEditClick()" style="color: darkgrey; cursor: pointer;"></i> </div>
+    <div class="actions__more"><i class="fas fa-ellipsis-h"  style="color: darkgrey; cursor: pointer;"(click)="onClick($event)" (contextmenu)="onRightClick($event)"></i></div>
+</div>
+
+<div class="context-menu" [style.left.px]="contextMenuPosition.x" [style.top.px]="contextMenuPosition.y" *ngIf="isContextMenuVisible">
+    <ul>
+      <app-tab icon="fa fa-trash" title="delete" shortCut="Ctr+D" (click)="handleMenuItemClick('Option 1')">Option 1</app-tab>
+      <app-tab icon="fa fa-edit" title="delete" shortCut="Ctr+D" (click)="handleMenuItemClick('Option 1')">Option 1</app-tab>
+      <app-tab icon="fa fa-trash" title="delete" shortCut="Ctr+D" (click)="handleMenuItemClick('Option 1')">Option 1</app-tab>
+    </ul>
+  </div>

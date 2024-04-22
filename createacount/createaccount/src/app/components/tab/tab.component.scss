@@ -1,0 +1,28 @@
+.tab{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 4px ;
+    width: 230px;
+    height: 25px;
+    margin: 4px 4px;
+    border-radius: 4px;
+    &__icon{
+        position: relative;
+        width: 30px;
+    }
+    &__title{
+        position: relative;
+        width: 170px;
+
+    }
+    &__shortcut{
+        position: relative;
+        width: 40px;
+        color: rgba(222, 222, 222,0.8);
+        font-weight: 23;
+        font-family: sans-serif;
+    }
+}
+.tab:hover{
+    background-color: rgba(222, 222, 222,0.5);
+}

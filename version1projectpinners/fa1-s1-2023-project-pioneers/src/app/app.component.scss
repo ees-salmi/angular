@@ -1,0 +1,17 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+mat-drawer {
+    width: 260px;
+    //position: fixed;
+    background: cornflowerblue;
+}
+
+mat-drawer-container {
+    height: 100%;
+    flex-grow: 1;
+    background: rgb(20, 160, 55);
+}

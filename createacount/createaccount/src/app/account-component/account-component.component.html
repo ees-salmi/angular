@@ -1,0 +1,8 @@
+<div>
+    <input [(ngModel)]="accountID" type="text" placeholder="Account ID">
+    <input [(ngModel)]="amount" type="number" placeholder="Amount">
+    <button (click)="createAccount()">Create Account</button>
+    <button (click)="topUp()">Top Up</button>
+    <p *ngIf="balance !== undefined">Balance: {{ balance }}</p>
+ 
+</div>

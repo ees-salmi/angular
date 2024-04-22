@@ -1,0 +1,35 @@
+
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Liste des collaborateurs</h1>
+  </div>
+  <p-card>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>GGID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Grade</th>
+            <th>Post</th>
+            <th>Projet</th>
+            <th>Perf</th>
+            <th>Pot</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let collab of filteredCollaborators">
+            
+            <td>{{collab.globalGroupId}}</td>
+            <td>{{collab.firstName}}</td>
+            <td>{{collab.lastName}}</td>
+            <td>{{collab.groupGrade}}</td>
+            <td>{{collab.jobTitle}}</td>
+            <td>{{collab.projectName}}</td>
+            <td>{{collab.localGrade}}</td>
+            <td>{{collab.puCode}}</td>
+            <td><button class="btn btn-success" [routerLink]="['/home/displayCollaboratorDetails', collab.globalGroupId]">Détails</button></td>
+          </tr>
+        </tbody>
+      </table>
+  </p-card>

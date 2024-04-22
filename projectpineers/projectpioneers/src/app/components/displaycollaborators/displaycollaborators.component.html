@@ -1,0 +1,57 @@
+<div class='card'>
+  <div class='card-header'>
+    title
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-2'>Filter by:</div>
+      <div class='col-md-4'>
+        <input type='text'
+        [(ngModel)]='listFilter'
+        placeholder="enter a name"
+                />
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-md-6'>
+        <h4>Filtered by: {{listFilter}}</h4>
+      </div>
+    </div>
+    <div class='table-responsive'>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>GGID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Grade</th>
+            <th>Post</th>
+            <th>Projet</th>
+            <th>Perf</th>
+            <th>Pot</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let collab of filteredCollaborators">
+            
+            <td>{{collab.globalGroupId}}</td>
+            <a [routerLink]="['/displayCollaboratorDetails', collab.globalGroupId]">
+              <td>{{collab.firstName}}</td>
+            </a>
+            
+            <td>{{collab.lastName}}</td>
+            <td>{{collab.groupGrade}}</td>
+            <td>{{collab.jobTitle}}</td>
+            <td>{{collab.projectName}}</td>
+            <td>{{collab.localGrade}}</td>
+            <td>{{collab.puCode}}</td>
+            
+            <td><button class="btn btn-success">detail</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

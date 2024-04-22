@@ -1,0 +1,40 @@
+/* Style the outer div */
+div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+    margin: 20px auto; /* Center horizontally */
+  }
+  
+  /* Style the input fields */
+  input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style the buttons */
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Style the paragraph */
+  p {
+    margin-top: 10px;
+  }
+  
+  /* Hide the paragraph initially */
+  p.ng-hide {
+    display: none;
+  }
+  

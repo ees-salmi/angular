@@ -1,0 +1,9 @@
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Automatisation de la restitution</h1>
+    </div>
+    <h1>Upload and Download File</h1>
+<input type="file" id="customFile" (change)="selectFile($event)">
+<button class="btn btn-primary" [disabled]="!selectedFiles " (click)="upload()">Save File</button>
+<button class="btn btn-primary" style="margin-left: 10px" (click)="downloadFile()">View File</button>
+</main>

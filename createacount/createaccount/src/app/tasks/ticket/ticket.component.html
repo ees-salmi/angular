@@ -1,0 +1,19 @@
+<div  class="card" >
+  <div class="card__header">
+    <p *ngIf="!isEditing">{{title}}</p>
+    <input  *ngIf="isEditing" type="text" [value]="title">
+    <app-action (clicked)="onEditClicked()" class="ticket__action"></app-action>
+  </div>
+  <div class="content">
+          <div class="description">
+              {{description}}
+          </div>
+          <div class="profile">
+
+          </div>
+     <div class="createdDate">
+              {{createdDate | transformDate}}
+     </div>
+  </div>
+</div>
+ 
